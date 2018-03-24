@@ -125,5 +125,5 @@ function load_json_file($path) {
 }
 
 function get_directory($subject, $parent = 'subjects') {
-  return __DIR__ . '/' . $parent . '/' . $subject . '/';
+  return __DIR__ . '/' .  $parent . '/' . $subject . '/';
 }

@@ -77,7 +77,7 @@ foreach ($data as $filename => $podcast) { ?>
       foreach ($podcast['paragraphs'] as $paragraph) { ?>
         <div class="podcast-paragraph-content"><?= $paragraph['content']; ?></div>
         <div class="podcast-paragraph-duration">Duration: <?= $paragraph['duration']; ?></div>
-      <? }
+      <?php }
     } else {
       echo $podcast['content'];
     } ?>
