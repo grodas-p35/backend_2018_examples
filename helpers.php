@@ -64,7 +64,8 @@ function get_tasks($subject) {
 global $subject_list;
 $subject_list = [
   'constructions' => 'Conditional structures',
-  'functions' => 'Functions'
+  'functions' => 'Functions',
+  'db_requests' => 'DB. Requests'
 ];
 
 function show_home() {
@@ -125,5 +126,5 @@ function load_json_file($path) {
 }
 
 function get_directory($subject, $parent = 'subjects') {
-  return __DIR__ . '/' .  $parent . '/' . $subject . '/';
+  return PROJECT_FILE_ROOT . '/' .  $parent . '/' . $subject . '/';
 }
